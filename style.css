@@ -67,8 +67,9 @@ img {
   row-gap: 24px;
   height: 100vh;
   display: grid;
-  grid-template-columns: 15% 70%;
+  /* /* grid-template-columns: 15% 70%; */
   grid-template-rows: 178%;
+  grid-template-areas: "side-bar header header header" "side-bar main-comp main-comp main-comp";
 }
 .side-bar {
   background-color: rgb(141, 146, 209);
