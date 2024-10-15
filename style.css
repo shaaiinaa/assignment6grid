@@ -111,12 +111,12 @@ img {
   display: none;
 }
 .item {
-  font-size: 32px;
+  font-size: 20px;
 }
 
 @media (width<=860px) {
   .main-comp {
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, 1fr);
   }
   /* {
   } */
@@ -138,8 +138,13 @@ img {
   .item:hover {
     cursor: pointer;
     text-decoration: underline;
+    text-underline-offset: 4px;
     width: 100px;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   .button:hover {
     outline: none;
     /* doubt */
